@@ -1,3 +1,2 @@
 
-tripleCheck = head [x*y*z | x<- [1..500], y<-[x..700], z<-[y..1000],x+y+z==1000, x*x + y*y == z*z]
-
+tripleCheck = product (head [[x,y,1000-x-y] | x<- [1..1000], y<-[x..1000], x*x + y*y == (1000-x-y)*(1000-x-y)])
